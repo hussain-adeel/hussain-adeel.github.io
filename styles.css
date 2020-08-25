@@ -1,3 +1,52 @@
-h1 {
-    color: red;
+body 
+{
+    background-color: #161748;
+}
+.center {
+    width: 50%;
+    margin: auto;
+}
+.something {
+    text-align: left;
+    padding-top: 70px;
+    font-family: 'Lobster', cursive;
+    color: #39a0ca;
+}
+.comingsoon {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 200px;
+}
+.stay {
+    text-align: right;
+    font-family: 'Lobster', cursive;
+    color: #39a0ca;
+}
+h1, a, a:hover {
+    color: white;
+}
+.promo {
+    width: 110px;
+    margin-top: 70px;
+    text-align: center;
+    display: block;
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+}
+.promo::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #39a0ca;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.promo:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }
